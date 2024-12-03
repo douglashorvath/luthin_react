@@ -1,0 +1,141 @@
+.navbarWrapper {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar tudo à esquerda */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    /* Fundo preto */
+    color: #fff;
+    /* Texto branco */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    height: 70px;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    /* Espaço entre o logo e o menu */
+}
+
+.logo {
+    height: 50px;
+    /* Logo maior */
+    margin-right: 15px;
+    /* Espaço ao lado do logo */
+}
+
+.menuLinks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    color: #ffcc00;
+    /* Amarelo */
+    font-size: 20px;
+    /* Menus maiores */
+    cursor: pointer;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
+}
+
+.navButton:hover {
+    color: #e6b800;
+    /* Amarelo mais escuro */
+}
+
+.menuIcon {
+    font-size: 24px;
+    /* Ícone do menu maior */
+}
+
+.userMenu {
+    margin-left: auto;
+    /* Move o menu do usuário para o lado direito */
+    position: relative;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownButton {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    /* Texto maior */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o nome do luthier */
+}
+
+.userIcon {
+    font-size: 28px;
+    /* Ícone maior */
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    /* Fundo cinza escuro para contrastar */
+    min-width: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
+}
+
+.dropdownContent button:hover {
+    background-color: #444;
+}
+
+.dropdownIcon {
+    font-size: 18px;
+    /* Ícone do dropdown */
+    color: #ffcc00;
+    /* Amarelo para ícones */
+}
+
+.gradientBar {
+    height: 5px;
+    background: linear-gradient(to right, #ffcc00, #ff0000);
+    /* Gradiente de amarelo a vermelho */
+    width: 100%;
+}

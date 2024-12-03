@@ -1,0 +1,95 @@
+/* LuthierRegistration.module.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    /* Fundo preto */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Centralizar verticalmente */
+}
+
+.registration-box {
+    background-color: #1e1e1e;
+    /* Fundo do formulário */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.registration-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff0000;
+    /* Vermelho */
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #cc0000;
+}
+
+.back-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffff00;
+    /* Amarelo */
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #e6e600;
+}
+
+.error-message {
+    color: #ff0000;
+    /* Vermelho para destacar erros */
+    font-size: 0.9em;
+}

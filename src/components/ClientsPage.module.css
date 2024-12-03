@@ -1,0 +1,186 @@
+.clientsContainer {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+.title {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.searchInput {
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    outline: none;
+}
+
+.loadingMessage,
+.noClients {
+    font-size: 18px;
+    color: #fff;
+}
+
+.clientsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.clientsTable th,
+.clientsTable td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.clientsTable th {
+    background-color: #333;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .clientsTable th:nth-child(1) {
+        width: 25%;
+    }
+
+    .clientsTable th:nth-child(2) {
+        width: 20%;
+    }
+
+    .clientsTable th:nth-child(4) {
+        width: 25%;
+    }
+
+    .clientsTable th:nth-child(6) {
+        width: 10%;
+    }
+}
+
+.clientsTable tr:nth-child(even) {
+    background-color: #222;
+}
+
+.clientsTable tr:hover {
+    background-color: #333;
+}
+
+.phoneWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsappIcon {
+    color: #25D366;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.whatsappIcon:hover {
+    transform: scale(1.2);
+}
+
+.addButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.newClientButton {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newClientButton:hover {
+    background-color: #e6b800;
+}
+
+.buttonIcon {
+    font-size: 20px;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.editButton,
+.deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.editButton:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
+
+.deleteButton {
+    color: #ff0000;
+}
+
+.deleteButton:hover {
+    transform: scale(1.1);
+    color: #cc0000;
+}
+
+@media (max-width: 768px) {
+
+    .clientsTable th,
+    .clientsTable td {
+        padding: 8px;
+    }
+
+    .newClientButton {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .editButton,
+    .deleteButton {
+        font-size: 16px;
+    }
+}

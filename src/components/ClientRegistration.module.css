@@ -1,0 +1,154 @@
+.clientRegistrationContainer {
+    padding: 20px 40px;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    flex-direction: column;
+}
+
+.clientForm {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    border: 1px solid #ffcc00;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.fieldset {
+    border: 1px solid #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fieldset legend {
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.fullWidth {
+    grid-column: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.halfWidth {
+    grid-column: span 1.5;
+}
+
+.profissaoField {
+    grid-column: span 2;
+    /* Aumenta o campo 'Profissão' sem quebrar a linha */
+    max-width: 400px;
+    /* Limita o tamanho máximo do campo para evitar quebra */
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formGroup label {
+    color: #ffcc00;
+}
+
+.formGroup input,
+.formGroup select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.phonesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phoneItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phoneItem input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.addPhoneButton,
+.removePhoneButton {
+    background: none;
+    border: none;
+    color: #ffcc00;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.addPhoneButton:hover,
+.removePhoneButton:hover {
+    transform: scale(1.1);
+}
+
+.formActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submitButton,
+.backButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submitButton {
+    background-color: #ff0000;
+    /* Vermelho */
+    color: #fff;
+}
+
+.submitButton:hover {
+    background-color: #cc0000;
+}
+
+.backButton {
+    background-color: #ffcc00;
+    /* Amarelo */
+    color: #000;
+}
+
+.backButton:hover {
+    background-color: #e6b800;
+}
