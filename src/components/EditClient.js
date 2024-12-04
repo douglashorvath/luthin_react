@@ -1,4 +1,3 @@
-// EditClient.js
 import React, { useState, useEffect } from 'react';
 import styles from './EditClient.module.css';
 import Swal from 'sweetalert2';
@@ -28,8 +27,17 @@ function EditClient({ clientId, onBackClick }) {
         // Busca os dados do cliente a ser editado
         axios.get(`http://localhost:5000/api/clientes/${clientId}`)
             .then(response => {
-                const { telefones, ...clientInfo } = response.data;
-                setClientData(clientInfo);
+                const { telefones, data_nascimento, ...clientInfo } = response.data;
+
+                // Verificar e converter a data de nascimento para o formato "yyyy-MM-dd"
+                const formattedDate = data_nascimento
+                    ? new Date(data_nascimento).toISOString().split('T')[0]
+                    : '';
+
+                setClientData({
+                    ...clientInfo,
+                    data_nascimento: formattedDate,
+                });
                 setTelefones(telefones);
             })
             .catch(error => {
@@ -41,6 +49,7 @@ function EditClient({ clientId, onBackClick }) {
                 });
             });
     }, [clientId]);
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;

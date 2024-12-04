@@ -1,4 +1,4 @@
-.clientsContainer {
+.instrumentsContainer {
     padding: 20px;
     min-height: 100vh;
     background-color: #000;
@@ -41,53 +41,34 @@
 }
 
 .loadingMessage,
-.noClients {
+.noInstruments {
     font-size: 18px;
     color: #fff;
 }
 
-.clientsTable {
+.instrumentsTable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     overflow-x: auto;
 }
 
-.clientsTable th,
-.clientsTable td {
+.instrumentsTable th,
+.instrumentsTable td {
     border: 1px solid #444;
     padding: 10px;
     text-align: left;
     vertical-align: middle;
-    /* Alinha ao centro verticalmente */
 }
 
-.clientsTable th {
+.instrumentsTable th {
     background-color: #333;
     color: #ffcc00;
     font-weight: bold;
 }
 
-.clientsTable td {
+.instrumentsTable td {
     vertical-align: top;
-}
-
-.phoneWithIcon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.whatsappIcon {
-    color: #25D366;
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.whatsappIcon:hover {
-    transform: scale(1.2);
 }
 
 .actionButtons {
@@ -108,7 +89,6 @@
     transition: transform 0.3s;
     color: #ffcc00;
     font-size: 20px;
-    /* Aumentei o tamanho dos ícones para 20px */
 }
 
 .editButton:hover {
@@ -131,7 +111,7 @@
     margin-top: 20px;
 }
 
-.newClientButton {
+.newInstrumentButton {
     padding: 12px 25px;
     background-color: #ffcc00;
     color: #000;
@@ -145,7 +125,7 @@
     gap: 10px;
 }
 
-.newClientButton:hover {
+.newInstrumentButton:hover {
     background-color: #e6b800;
 }
 
@@ -155,19 +135,19 @@
 
 @media (min-width: 768px) {
 
-    /* Aumentando a largura do campo "Nome" */
-    .clientsTable th:nth-child(1),
-    .clientsTable td:nth-child(1) {
+    /* Aumentando a largura do campo "Modelo" */
+    .instrumentsTable th:nth-child(1),
+    .instrumentsTable td:nth-child(1) {
         width: 30%;
-        /* Aumentando a largura do campo "Nome" para 30% */
+        /* Aumentando a largura do campo "Modelo" para 30% */
     }
 
-    .clientsTable th,
-    .clientsTable td {
+    .instrumentsTable th,
+    .instrumentsTable td {
         padding: 8px;
     }
 
-    .newClientButton {
+    .newInstrumentButton {
         font-size: 16px;
         padding: 10px 20px;
     }
@@ -175,14 +155,13 @@
     .editButton,
     .deleteButton {
         font-size: 20px;
-        /* Mantendo o tamanho aumentado dos ícones para dispositivos maiores */
     }
 }
 
-.clientsTable tr:nth-child(even) {
+.instrumentsTable tr:nth-child(even) {
     background-color: #222;
 }
 
-.clientsTable tr:hover {
+.instrumentsTable tr:hover {
     background-color: #333;
 }

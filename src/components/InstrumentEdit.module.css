@@ -1,0 +1,195 @@
+/* Estilo para o componente de autocomplete do cliente */
+.asyncSelect {
+    --color-background: #1e1e1e;
+    --color-text: #fff;
+}
+
+/* Estilo do controle de seleção */
+.asyncSelect .react-select__control {
+    background-color: #1e1e1e;
+    border: 1px solid #ffcc00;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+/* Estilo do menu de opções */
+.asyncSelect .react-select__menu {
+    background-color: #1e1e1e;
+    border: 1px solid #ffcc00;
+}
+
+/* Estilo da opção quando está focada */
+.asyncSelect .react-select__option--is-focused {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Estilo das opções */
+.asyncSelect .react-select__option {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Estilo do container principal da página de edição */
+.instrumentEditContainer {
+    padding: 20px 40px;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo do formulário de edição */
+.instrumentForm {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    border: 1px solid #ffcc00;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+/* Estilo dos fieldsets */
+.fieldset {
+    border: 1px solid #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fieldset legend {
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Estilo da seção do formulário */
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Classes para manipulação da largura dos campos */
+.fullWidth {
+    grid-column: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.smallWidth {
+    max-width: 100px;
+}
+
+.widerField {
+    grid-column: span 2;
+    max-width: 600px;
+}
+
+/* Estilo dos grupos de formulário */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formGroup label {
+    color: #ffcc00;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    height: 45px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilo do campo de texto do cliente (não editável) */
+.clientNameInput {
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    height: 45px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Estilo do botão "Mudar Cliente" */
+.changeClientButton {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 45px;
+}
+
+.changeClientButton:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Estilo do container do cliente */
+.clientContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo das áreas de ação do formulário, como os botões */
+.formActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submitButton,
+.backButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submitButton {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.submitButton:hover {
+    background-color: #cc0000;
+}
+
+.backButton {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.backButton:hover {
+    background-color: #e6b800;
+}

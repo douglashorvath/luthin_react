@@ -1,16 +1,41 @@
-.clientRegistrationContainer {
+.asyncSelect {
+    --color-background: #1e1e1e;
+    /* Ajusta a cor de fundo */
+    --color-text: #fff;
+    /* Ajusta a cor do texto */
+}
+
+.asyncSelect .react-select__control {
+    background-color: #1e1e1e;
+    border: 1px solid #ffcc00;
+    color: #fff;
+}
+
+.asyncSelect .react-select__menu {
+    background-color: #1e1e1e;
+}
+
+.asyncSelect .react-select__option--is-focused {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.asyncSelect .react-select__option {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.instrumentRegistrationContainer {
     padding: 20px 40px;
     min-height: 100vh;
     background-color: #000;
     color: #fff;
     display: flex;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
     flex-direction: column;
 }
 
-.clientForm {
+.instrumentForm {
     width: 90%;
     max-width: 1200px;
     background-color: #1e1e1e;
@@ -49,15 +74,15 @@
     grid-column: span 2;
 }
 
-.halfWidth {
-    grid-column: span 1.5;
+.smallWidth {
+    max-width: 100px;
+    /* Campo menor para "Cordas" */
 }
 
-.profissaoField {
+.widerField {
     grid-column: span 2;
-    /* Aumenta o campo 'Profissão' sem quebrar a linha */
-    max-width: 400px;
-    /* Limita o tamanho máximo do campo para evitar quebra */
+    max-width: 600px;
+    /* Aumenta a largura de "Condição" e "Descritivo" */
 }
 
 .formGroup {
@@ -71,7 +96,8 @@
 }
 
 .formGroup input,
-.formGroup select {
+.formGroup select,
+.formGroup textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -79,42 +105,9 @@
     color: #fff;
 }
 
-.phonesSection {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.phoneItem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.phoneItem input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-}
-
-.addPhoneButton,
-.removePhoneButton {
-    background: none;
-    border: none;
-    color: #ffcc00;
-    cursor: pointer;
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.addPhoneButton:hover,
-.removePhoneButton:hover {
-    transform: scale(1.01);
+textarea {
+    resize: vertical;
+    min-height: 80px;
 }
 
 .formActions {
@@ -135,7 +128,6 @@
 
 .submitButton {
     background-color: #ff0000;
-    /* Vermelho */
     color: #fff;
 }
 
@@ -145,7 +137,6 @@
 
 .backButton {
     background-color: #ffcc00;
-    /* Amarelo */
     color: #000;
 }
 
